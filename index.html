@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: darkslategrey;
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .game-board {
+        display: grid;
+        width: 100vmin;
+        height: 100vmin;
+        background-color: #ccc;
+        grid-template-columns: repeat(21, 1fr);
+        grid-template-rows: repeat(21, 1fr);
+      }
+      .food {
+        background-color: tomato;
+        border: 0.25vmin solid black;
+      }
+      .snake {
+        border: 0.25vmin solid black;
+        background-color: skyblue;
+      }
+      h1 {
+        position: absolute;
+        top: 100px;
+        opacity: 0.5;
+      }
+      h2 {
+        position: absolute;
+        top: 50px;
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <h2></h2>
+    <h1></h1>
+    <div class="game-board"></div>
+  </body>
+  <footer>
+    <script type="module" src="game.js" defer></script>
+  </footer>
+</html>
